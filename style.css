@@ -1,0 +1,301 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700&display=swap');
+
+
+h1 {
+  font-family: 'Quicksand', 'Noto Sans SC', '圆体', 'Yuanti SC', 'Microsoft YaHei', sans-serif;
+  font-weight: 700;
+  font-size: 2.4rem;
+  letter-spacing: 2px;
+  color: #2c3e2f;
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.15);
+  position: relative;
+  display: inline-block;
+  width: 100%;
+}
+
+h1::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 3px;
+  background: linear-gradient(90deg, #4a9e5c, #0d6efd, #6f42c1);
+  border-radius: 3px;
+}
+
+.accordion-button {
+  font-family: 'Quicksand', 'Noto Sans SC', '圆体', 'Yuanti SC', 'Microsoft YaHei';
+  font-weight: 700;
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+  padding: 1.3rem 1.8rem !important;  
+  min-height: 85px;                  
+}
+
+.accordion-item {
+  margin-bottom: 1rem;
+  border-radius: 14px !important;
+  overflow: hidden;
+  border: none;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.accordion-body {
+  padding: 1.6rem !important;
+}
+
+.accordion-icon {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+}
+
+.place-card {
+  cursor: pointer;
+  transition: all 0.2s ease;
+  border: 2px solid #dee2e6;
+  margin-bottom: 1rem;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  height: 100%;
+  background-color: #fff;
+}
+
+.place-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.place-card.selected {
+  border: 3px solid #0d6efd;
+  background-color: #f0f8ff;
+  box-shadow: 0 0 0 0.2rem rgba(13, 110, 253, 0.25);
+}
+
+.place-card img {
+  height: 150px;
+  object-fit: cover;
+  width: 100%;
+}
+
+.place-card .card-body {
+  padding: 0.75rem;
+}
+
+.place-card .card-title {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.place-card .card-text {
+  font-size: 0.8rem;
+  color: #6c757d;
+}
+
+.error-text {
+  color: #dc3545;
+  font-size: 0.875rem;
+  margin-top: 0.25rem;
+  display: block;
+}
+
+.general-error {
+  color: #dc3545;
+  font-weight: bold;
+  margin-top: 1rem;
+  padding: 0.75rem;
+  background-color: #f8d7da;
+  border-radius: 0.375rem;
+  border: 1px solid #f5c2c7;
+}
+
+.summary-section {
+  background-color: #f8f9fa;
+  border-left: 5px solid #0d6efd;
+  margin-top: 2rem;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+}
+
+.summary-section h3 {
+  color: #0d6efd;
+  margin-bottom: 1rem;
+}
+
+.summary-section h5 {
+  color: #495057;
+  margin-top: 1rem;
+  margin-bottom: 0.75rem;
+  border-bottom: 2px solid #dee2e6;
+  padding-bottom: 0.5rem;
+}
+
+.form-control:focus, .form-select:focus {
+  border-color: #0d6efd;
+  box-shadow: 0 0 0 0.2rem rgba(13, 110, 253, 0.25);
+}
+
+.form-check-input:checked {
+  background-color: #0d6efd;
+  border-color: #0d6efd;
+}
+
+.btn-primary {
+  background-color: #0d6efd;
+  border-color: #0d6efd;
+  padding: 0.75rem 2rem;
+  font-size: 1.1rem;
+  transition: all 0.2s ease;
+}
+
+.btn-primary:hover {
+  background-color: #0b5ed7;
+  border-color: #0a58ca;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(13, 110, 253, 0.3);
+}
+
+.accordion-button {
+  font-weight: 500;
+  background-color: #f8f9fa;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: #e9ecef;
+  color: #0d6efd;
+}
+
+.spinner-border {
+  width: 3rem;
+  height: 3rem;
+}
+
+@media (max-width: 768px) {
+  .place-card img {
+    height: 120px;
+  }
+  
+  .summary-section {
+    padding: 1rem;
+  }
+  
+  .btn-primary {
+    padding: 0.5rem 1.5rem;
+    font-size: 1rem;
+  }
+  
+  h1 {
+    font-size: 1.5rem;
+  }
+}
+
+
+.list-group-item {
+  background-color: transparent;
+  border-color: #e9ecef;
+}
+
+
+.alert-success {
+  background-color: #d1e7dd;
+  border-color: #badbcc;
+  color: #0f5132;
+}
+
+
+
+body {
+  background-image: url('assets/bg-totoro.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
+#app {
+  background-color: rgba(255, 255, 255, 0.85);
+  border-radius: 1rem;
+  padding: 2rem !important;
+  backdrop-filter: blur(2px);
+}
+
+
+
+.accordion-button {
+  position: relative;
+  color: white !important;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+  font-weight: bold;
+  background-size: cover !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+}
+
+.accordion-button::after {
+  z-index: 1;
+}
+
+#headingPersonal .accordion-button {
+  background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('assets/acc-bg1.jpg');
+}
+
+#headingPark .accordion-button {
+  background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('assets/acc-bg2.jpg');
+}
+
+#headingVisitors .accordion-button {
+  background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('assets/acc-bg3.jpg');
+}
+
+#headingAccommodation .accordion-button {
+  background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('assets/acc-bg4.jpg');
+}
+
+#headingPayment .accordion-button {
+  background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('assets/acc-bg5.jpg');
+}
+
+.accordion-button:hover {
+  filter: brightness(1.05);
+}
+
+.accordion-button:not(.collapsed) {
+  background-blend-mode: overlay;
+}
+
+
+.accordion-collapse {
+  transition: height 0.45s cubic-bezier(0.25, 0.46, 0.45, 0.94) !important;
+}
+
+.accordion-collapse.collapsing {
+  transition: height 0.45s cubic-bezier(0.25, 0.46, 0.45, 0.94) !important;
+}
+
+.accordion-body {
+  animation: gentleFade 0.45s ease-out;
+}
+
+@keyframes gentleFade {
+  0% {
+    opacity: 0;
+    transform: translateY(-5px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.accordion-button::after {
+  transition: transform 0.35s ease !important;
+}
+
+.accordion-button:not(.collapsed)::after {
+  transform: rotate(180deg) !important;
+}
